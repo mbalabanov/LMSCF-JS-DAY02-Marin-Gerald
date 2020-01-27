@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Yesterday's date - Advanced 2</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+
+	<script>
+
+		let today = function(todaysDate) {
+			let getToday = new Date(todaysDate);
+			let yesterdaysDate = getToday.getDate() - 1;
+			document.write('Today is ' + todaysDate + '. So yesterday was ' + yesterdaysDate + '.');		
+		}
+
+		today('Feb 23, 2019');
+	</script>
+</body>
+</html>
