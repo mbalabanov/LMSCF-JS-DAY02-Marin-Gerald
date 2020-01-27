@@ -13,10 +13,10 @@
 
 	function grade (math,physics,english){
 
-		var sum=math+physics+english;
-		var average=(math+physics+english)/3;
+		var sum=parseInt(math)+parseInt(physics)+parseInt(english);
+		var average=sum/3;
 		document.write('Sum of grades:'+sum+ '<br>' + 'Average of grades:'+average);
-		return math+physics+english;
+
 
 	}
 	grade (math,physics,english);
