@@ -6,18 +6,12 @@
 <body>
 
 	<script>
-		var today= (function (todaysDate) {
-		   var getToday = new Date(todaysDate);
+		var today= (function () {
+		   var getToday = new Date();
 		   yesterdaysDate = getToday.getDate() - 1;
-		   document.write('Today is ' + todaysDate + '. So yesterday was ' + yesterdaysDate + '.') 
-		   return today;
-			
+		   document.write('Today is ' + Date() + '. <br>'+'So yesterday was ' + yesterdaysDate +'.') 
+		   return today;			
 		}());
-
-		var dateObj =new Date();
-		today(dateObj);
-
-
 
 	</script>
 
