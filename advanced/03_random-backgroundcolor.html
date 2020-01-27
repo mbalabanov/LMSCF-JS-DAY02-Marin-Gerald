@@ -15,13 +15,15 @@
 		let randomRed = generateRandomRGBColor();
 		let randomBlue = generateRandomRGBColor();
 		let randomGreen = generateRandomRGBColor();
-
+		let myProperRGBColor = 'rgb(' + randomRed + ', ' + randomBlue + ', ' + randomGreen + ')';
 
 		function generateRandomRGBColor() {
 				return Math.floor(Math.random() * Math.floor(255));
 		}
 
-		document.body.style.backgroundColor = 'rgb(' + randomRed + ', ' + randomBlue + ', ' + randomGreen + ')';
+		document.body.style.backgroundColor = myProperRGBColor;
+
+		document.write('Please reload page to get a different background color. This time the background color is: ' + myProperRGBColor)
 
 	</script>
 </body>
