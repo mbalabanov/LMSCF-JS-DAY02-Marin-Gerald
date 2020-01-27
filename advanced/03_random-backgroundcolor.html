@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Random Background Color - Advanced 3</title>
+</head>
+<body>
+	
+
+	<script>
+
+		let colorRGBArray = [];
+
+		let randomRed = generateRandomRGBColor();
+		let randomBlue = generateRandomRGBColor();
+		let randomGreen = generateRandomRGBColor();
+
+
+		function generateRandomRGBColor() {
+				return Math.floor(Math.random() * Math.floor(255));
+		}
+
+		document.body.style.backgroundColor = 'rgb(' + randomRed + ', ' + randomBlue + ', ' + randomGreen + ')';
+
+	</script>
+</body>
+</html>
