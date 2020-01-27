@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Background Color variant 2</title>
+</head>
+<body>
+	
+	<script>
+		
+		function colorcreation(){
+			var genred=Math.floor(Math.random()*255);
+			var gengreen=Math.floor(Math.random()*255);
+			var genblue=Math.floor(Math.random()*255);
+			var totalcal = 'rgb(' + genred + ', ' + gengreen + ', ' + genblue + ')'; /* should look like that: rgb(10,20,30) */
+			document.write('The current background color is : ' + totalcal);
+			return totalcal;
+		}
+
+		var myRandomRGB = colorcreation(); 		
+		document.body.style.backgroundColor = myRandomRGB;
+
+	</script>
+
+</body>
+</html>
