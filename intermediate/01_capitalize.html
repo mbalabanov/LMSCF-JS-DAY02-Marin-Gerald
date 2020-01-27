@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>capitalize</title>
+</head>
+<body>
+
+	<script>
+		var st="i am a web developer";
+
+
+		/* not anonymous JavaScript functuion*/
+		function Ucfirst(string){
+    	return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+
+		var outp=Ucfirst(st);
+
+		console.log(outp);
+		
+
+		/*  anonymous JavaScript function  */
+
+		var stri = (function() {  
+  
+  			return st.charAt(0).toUpperCase() + st.slice(1);
+  			
+		}());
+
+		console.log(stri);
+
+	</script>
+
+</body>
+</html>
