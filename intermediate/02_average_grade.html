@@ -5,21 +5,21 @@
 </head>
 <body>
 
-	
-
 	<script>
-	var math = 3;
-	var physics=4;
-	var	english =5;
 
-	function grade (math, physics,english){
+	var math = prompt('Enter your math grade: ', 3);
+	var physics = prompt('Enter your physics grade: ', 4);
+	var english = prompt('Enter your english grade:', 5);
 
-		var sum=math+physics+english;
-		var average=(math+physics+english)/3;
+	function grade (math,physics,english){
+
+		var sum=parseInt(math)+parseInt(physics)+parseInt(english);
+		var average=sum/3;
 		document.write('Sum of grades:'+sum+ '<br>' + 'Average of grades:'+average);
 
+
 	}
-	grade (math, physics,english);
+	grade (math,physics,english);
 
 	</script>
 </body>
