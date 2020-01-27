@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Time Convert - Advanced 1</title>
+</head>
+<body>
+	
+
+	<script>
+
+		let minutes = 200;
+
+		function timeConvert(minutes) {
+			let hours = (minutes/60).toFixed(0);
+			let remainingMinutes = minutes - (hours * 60);
+
+			document.write(minutes + ' minutes are actually ' + hours + ' hours and ' + remainingMinutes + ' minutes.');
+		}
+
+		timeConvert(minutes);
+	</script>
+</body>
+</html>
