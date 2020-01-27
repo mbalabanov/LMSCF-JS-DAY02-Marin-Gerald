@@ -9,12 +9,11 @@
 	
 
 	<script>
-
 		let minutes = prompt('Enter minutes to convert to hours and minutes: ', 200);
 
 		function timeConvert(minutes) {
-			let hours = (minutes/60).toFixed(0);
-			let remainingMinutes = minutes - (hours * 60);
+			let hours = Math.floor((minutes/60).toFixed(0));
+			let remainingMinutes = minutes % 60;
 
 			document.write(minutes + ' minutes are actually ' + hours + ' hours and ' + remainingMinutes + ' minutes.');
 		}
