@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yesterdaysdte v2</title>
+</head>
+<body>
+
+	<script>
+		var today= (function (todaysDate) {
+		   var getToday = new Date(todaysDate);
+		   yesterdaysDate = getToday.getDate() - 1;
+		   document.write('Today is ' + todaysDate + '. So yesterday was ' + yesterdaysDate + '.') 
+		   return today;
+			
+		}());
+
+		var dateObj =new Date();
+		today(dateObj);
+
+
+
+	</script>
+
+</body>
+</html>
